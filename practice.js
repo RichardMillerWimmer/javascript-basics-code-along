@@ -5,6 +5,8 @@
 // After the first variable, make a variable named farewell with a data type of string that says 'Goodbye' (with single quotes)
 
 // Code here
+let greeting = "Hi";
+let farewell = 'Goodbye';
 
 
 
@@ -15,6 +17,9 @@
 // Concatenate hello and userName together and store the result in a variable called salutation
 
 //Code here
+let hello = "Hello";
+let userName = "Richard";
+let salutation = hello + userName;
 
 
 
@@ -23,6 +28,7 @@
 //Create a variable called seven that has a number data type with the value of 7
 
 //Code here
+let seven = 7; 
 
 
 
@@ -32,6 +38,7 @@
 // This datatype should be a number
 
 //Code here
+let money = 10000000000;
 
 
 
@@ -40,6 +47,7 @@
 // Make a variable called awesome and give it a value of the boolean data type true
 
 //Code here
+let awesome = true;
 
 
 
@@ -54,6 +62,7 @@ let myCar = "Jeep";
 
 
 //Code here
+myCar = null;
 
 
 
@@ -63,6 +72,7 @@ let myCar = "Jeep";
 // Each item should be an object, and each object should have 2 properties: name (string) and age (number)
 
 //Code here
+let  users = [user1 = {name:"Richard", age:33}, user2 = {name:"Valerie", age:32}, user3 = {name:"Robb", age:27}, user4 = {name:"Ronny", age:35}];
 
 
 
@@ -74,6 +84,17 @@ let myCar = "Jeep";
 // Each hobbies property will have a corresponding value which will be an object
 
 //Code here
+let family = {
+  richard: {
+    hobbies: ["woodworking", "working out", "firewood"]
+  },
+  val: {
+    hobbies: ["knitting", "reading", "PhD"] 
+  },
+  ronny: {
+    hobbies: ["3d", "video games", "drawing"]
+  }
+};
 
 
 
@@ -83,7 +104,7 @@ let myCar = "Jeep";
 // Each item should be an array with 2 items (numbers) in each array
 
 //Code here
-
+let gameScores = [[3, 5], [2, 7], [5, 10]];
 
 
 //////////////////PROBLEM 10////////////////////
@@ -92,6 +113,7 @@ let myCar = "Jeep";
 // Each object should have 3 properties: name (string), gender (string), height (number) in each array
 
 //Code here
+let people = [person1 = {name:"Richard", gender:"male", height:71}, person2 = {name:"Ronny", gender:"male", height:66}, person3 = {name:"Robb", gender:"male", height:72}]
 
 
 
@@ -101,6 +123,11 @@ let myCar = "Jeep";
 // This object should have 3 properties: name (string), state (string), favoriteCountrySong (string)
 
 //Code here
+let cowboy = {
+  name: "LeRoy",
+  state: "Wyoming",
+  favoriteCountrySong: "Broken Horse, Broken Heart"
+}
 
 
 
@@ -131,6 +158,7 @@ function launch() {
 
 
 //Code here
+let dataTypes = [42, "meaning", true, [1, 2, 3, 4, 5], spaceship, launch()];
 
 
 
@@ -139,7 +167,7 @@ function launch() {
 // Edit the function called "sum" so that when it is invoked, it returns the sum of its parameters num1 and num2
 
 function sum(num1, num2){
-  return // Code here
+  return num1 + num2
 };
   
 
@@ -149,12 +177,14 @@ function sum(num1, num2){
 // Create two variables number1 and number2 and assign them number values
 
 // Code here
+let number1 = 1;
+let number2 = 2;
 
 
 // Next, edit the function called "multiply" so that when it is invoked, it returns the result of multiplying number1 and number2
 
 function multiply() {
-  return // Code here
+  return number1 * number2
 };
 
 
@@ -169,8 +199,8 @@ let food = 'pizza';
 // Edit the function favFood so that when it is invoked it returns the string "My favorite food is pizza"
 // In your solution code, use template strings (not concatenation) and use the food variable provided
 
-function favFood(){
-  return // Code here
+function favFood(food){
+  return `My favortie food is ${food}`
 };
 
 
@@ -187,8 +217,10 @@ let theBoss;
 // the function assigns the value of theName to theBoss variable
 
 function assignName(name){
-  // Code here
+  return theBoss = name
 };
+
+assignName(theName);
 
 
 
@@ -207,7 +239,7 @@ let user = {
 // edit the function getName so that it accesses the name property of the user object and returns its value
 
 function getName(userObj){
-  return // Code here
+  return userObj["name"]
 };
 
 
@@ -229,8 +261,8 @@ let calendar = {
 // Make sure you are accessing it from the weekDays array of the calendar object
 
 function getWeekDay(calendar){
-  return // Code here
-}
+  return calendar.weekDays[2]
+};
 
 
 
@@ -239,6 +271,9 @@ function getWeekDay(calendar){
 // Create a function called "fn" that takes in a parameter and returns that parameter
 
 // Code here
+function fn(parameter) {
+  return parameter
+};
 
 
 
@@ -254,6 +289,9 @@ let lastName = "Jones";
 // The returned value should include a space between the first and last names and should use concatenation (not template strings)
 
 // Code here
+function createName() {
+  return firstName + " " + lastName
+};
 
 
 
@@ -262,6 +300,9 @@ let lastName = "Jones";
 // Create a function called showMeSeven that returns the number 7
 
 // Code here
+function showMeSeven () {
+  return 7
+};
 
 
 
@@ -270,6 +311,9 @@ let lastName = "Jones";
 // Create a function called multiplier that takes two parameters (numbers) and returns the product of the two parameters
 
 // Code here
+function multiplier(parameter1, parameter2) {
+  return parameter1 * parameter2
+};
 
 
 
@@ -280,6 +324,9 @@ let lastName = "Jones";
 // The returned value should include a space between the greeting and name parameters
 
 // Code here
+function sayHello(greeting, name) {
+  return greeting + " " + name
+};
 
 
 
