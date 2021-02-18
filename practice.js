@@ -338,6 +338,12 @@ function sayHello(greeting, name) {
   // the second property should be duration with the value of the second parameter
 
 // Code here
+function makeExercise (parameter1, parameter2) {
+  return exercise = {
+    exerciseName: parameter1,   
+    duration: parameter2
+  }
+};
 
 
 
@@ -352,9 +358,9 @@ let age = "TBD";
 // Use the if and else keywords in your solution
 // The variable age will be changed during testing
 
-function isOldEnough(){
-  // Code here
-};
+// function isOldEnough(age){
+//   if (age )
+// };
 
 
 
